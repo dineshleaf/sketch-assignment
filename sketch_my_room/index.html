@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sketmyroom Assignment - Front End Task</title>
+	<link rel="stylesheet" type="text/css" href="./sketch.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="contain">
+	<div class="flex-container">
+	<div id="sketch-top" class="flex-item sketch-brown">
+	</div>
+	<div class="flex-item sketch-aqua">
+	</div>
+  <div class="flex-item sketch-lime" id="sketch-lime">
+  </div>
+  <div class="flex-item sketch-yellow">
+  			
+  </div>
+  <div class="flex-item sketch-midnightblue">  	
+  </div>
+</div>
+</div>
+
+<script>
+		
+		$(function() {
+			if (window.matchMedia('(min-width: 769px)').matches)
+{
+  setInterval(function() {
+    $('#sketch-top').toggleClass('green-sketch');
+  }, 3000);
+
+  setInterval(function() {
+    $('#sketch-lime').toggleClass('brown-sketch');
+  }, 3000);
+}
+});
+</script>
+</body>
+</html>

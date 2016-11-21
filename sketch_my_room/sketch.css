@@ -1,0 +1,110 @@
+html,body{
+   max-width: 100%;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: wrap;
+    flex-flow: wrap;
+}
+#contain{
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.flex-container > * {
+    flex: 1 100%;
+}
+
+.sketch-brown {background: brown;}
+.sketch-aqua {background: aqua;}
+.sketch-lime {background: lime;}
+.sketch-yellow {background: yellow;}
+.sketch-midnightblue {background: midnightblue;}
+    .sketch-aqua { order:2; }
+    .sketch-brown { order:1; }
+    .sketch-lime { order:3; }
+    .sketch-yellow { order:4; }
+    .sketch-midnightblue { order:5; }
+    
+.sketch-aqua{
+    height:280px;
+    width: 50%;
+    flex: 1 auto;
+}
+
+.sketch-lime{
+    height:260px;
+    width: 50%;
+    flex: 1 auto;
+}
+.sketch-yellow{
+    height: 210px;
+    width: 0.025%;
+    flex-basis: inherit;
+}
+.sketch-midnightblue{
+    height: 230px;
+    width: 50%;
+    flex:1;
+    margin-top: -20px;
+
+}
+.sketch-brown{
+    height: 170px;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    
+    .sketch-aqua { 
+     order:1;
+     padding: 10px; 
+     height: 110px; 
+     width: 100%; 
+     transition-timing-function: linear;
+ }
+    .sketch-brown { 
+     order:2;
+     padding:10px;
+     height: 110px; 
+     width: 100%; 
+     transition-timing-function: ease;
+ }
+    .sketch-lime { 
+     order:3; 
+     padding: 10px; 
+     height: 110px; 
+     width: 100%; 
+     transition-timing-function: ease-in;
+ }
+    .sketch-yellow { 
+     order:4; 
+     padding: 10px; 
+     height: 110px; 
+     width: 100%; 
+     transition-timing-function: ease-out;
+ }
+    .sketch-midnightblue { 
+     order:5; 
+     padding: 10px; 
+     height: 110px; 
+     width: 100%; 
+     margin-top: 0px; 
+     transition-timing-function: ease-in-out;
+ }
+}
+
+.green-sketch {
+    background-color: lime;
+}
+.brown-sketch{
+    background-color: brown;
+}
+
+.sketch-aqua,.sketch-lime,.sketch-yellow,.sketch-midnightblue,.sketch-brown {
+        transition-property: all;
+        transition-duration: .5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: .1s;
+
+}
